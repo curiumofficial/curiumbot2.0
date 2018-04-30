@@ -23,17 +23,14 @@ client.on('message', !help => {
             title: "Bot Commands",
             description: "These are commands for the bot Beep Boop",
             fields: [{
-                name: "!cru",
-                value: "These command will give you curiums price"
-            },
-            {
-                name: "!command",
-                value: "You can put [masked links](http://google.com) inside of rich embeds."
-            },
-            {
-                name: "Markdown",
-                value: "You can put all the *usual* **__Markdown__** inside of them."
-            }
+              name: "!help", value: "This will give you a list of commands for the bot!" },
+            { name: "!cru", value: "These command will give you curiums price" },
+            { name: "!difficulty", value: "This will give you curiums current difficulty" },
+            { name: "!blockcount", value: "This will give you the current block curium is on" },
+            { name: "!hashrate", value: "These command will give you curiums price" },
+            { name: "!supply", value: "You can put [masked links](http://google.com) inside of rich embeds." },
+            { name: "!installguide", value: "You can put all the *usual* **__Markdown__** inside of them." },
+            { name: "!cruinfo", value: "These command will give you curiums price" }
             ],
             timestamp: new Date(),
             footer: {
