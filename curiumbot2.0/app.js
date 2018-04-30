@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 
 const config = require("./config.json");
-const prefix = "!"; 
+
 
 
 
@@ -11,8 +11,14 @@ client.on('ready', () => {
 });
 
 
+const prefix = "!";
 
-client.on('message', !help => {
+
+client.on('message', (message) => {
+  // our new check:
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
+  // [rest of the code]
+    if (message.content.startsWith(prefix + "help")) {
     message.channel.send({
         embed: {
             color: 3447003,
@@ -35,13 +41,19 @@ client.on('message', !help => {
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "© crubot"
+                text: "Â© crubot"
             }
         }
+        
     });
 });
 
-client.on('message', !cru => {
+client.on('message', (message) => {
+  // our new check:
+  if (!message.content.startsWith(prefix) || message.author.bot) return;
+  // [rest of the code]
+    if (message.content.startsWith(prefix + "cru")) {
+
     var price = 'https://api.coinmarketcap.com/v1/ticker/bitcoin/';
     var pprice = getJSON(price);
     var kprice = JSON.parse(pprice);
@@ -63,8 +75,9 @@ client.on('message', !cru => {
             timestamp: new Date(),
             footer: {
                 icon_url: client.user.avatarURL,
-                text: "© crubot"
+                text: "Â© crubot"
             }
+        }
         }
     });
 });
