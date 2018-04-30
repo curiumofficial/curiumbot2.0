@@ -34,9 +34,9 @@ client.on('message', (message) => {
             { name: "!difficulty", value: "This will give you curiums current difficulty" },
             { name: "!blockcount", value: "This will give you the current block curium is on" },
             { name: "!hashrate", value: "These command will give you curiums price" },
-            { name: "!supply", value: "You can put [masked links](http://google.com) inside of rich embeds." },
-            { name: "!installguide", value: "You can put all the *usual* **__Markdown__** inside of them." },
-            { name: "!cruinfo", value: "These command will give you curiums price" }
+            { name: "!supply", value: "This command will give you the amount of coins what have ever been made" },
+            { name: "!installguide", value: "These is a guide on how to setup a curium masternode" },
+            { name: "!cruinfo", value: "These command will give you information based on curium" }
             ],
             timestamp: new Date(),
             footer: {
