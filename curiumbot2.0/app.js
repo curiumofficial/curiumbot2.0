@@ -44,7 +44,7 @@ client.on('message', (message) => {
                 text: "© crubot"
             }
         }
-        }
+        };
     });
 });
 
