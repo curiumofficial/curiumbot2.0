@@ -1,0 +1,9 @@
+{
+  "name": "curiumbot2.0",
+  "version": "0.0.0",
+  "description": "curiumbot2.0",
+  "main": "app.js",
+  "author": {
+    "name": "Kolby"
+  }
+}
